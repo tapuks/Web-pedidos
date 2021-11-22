@@ -22,6 +22,7 @@ from web_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # ENLAZAMOS LAS URLS DE LA WEB_APP
+    path('servicios', include('servicios.urls')),
     path('', include('web_app.urls')),
 
 ]

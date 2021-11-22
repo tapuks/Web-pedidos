@@ -9,9 +9,7 @@ def home(request):
     return render(request, 'home.html')
 
 
-def servicios(request):
-    servicios= Servicio.objects.all()
-    return render(request, 'servicios.html', {'servicios': servicios})
+
 
 
 def tienda(request):
