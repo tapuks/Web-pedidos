@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # ENLAZAMOS LAS URLS DE LA WEB_APP
     path('servicios', include('servicios.urls')),
+    path('blog', include('blog.urls')),
+
     path('', include('web_app.urls')),
 
 ]

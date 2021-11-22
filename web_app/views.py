@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 # Create your views here.
-from servicios.models import Servicio
+
 
 
 def home(request):
@@ -16,8 +16,7 @@ def tienda(request):
     return render(request, 'tienda.html')
 
 
-def blog(request):
-    return render(request, 'blog.html')
+
 
 
 def contacto(request):

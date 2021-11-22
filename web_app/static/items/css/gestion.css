@@ -289,3 +289,9 @@ ul.errorlist{
     width:50%;
 
 }
+
+.autor {
+  font-size: 12px;
+  color: black;
+  text-align: left !important;
+}
