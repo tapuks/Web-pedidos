@@ -295,3 +295,13 @@ ul.errorlist{
   color: black;
   text-align: left !important;
 }
+
+.link-categories {
+    color: white !important;
+    text-decoration: underline
+}
+
+.link-categories:hover {
+    text-decoration: none
+
+}

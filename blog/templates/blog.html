@@ -31,7 +31,8 @@
         Categorías:
         {% for post in posts %}
             {% for categoria in post.categorias.all %}
-                {{ categoria.nombre }}&nbsp;&nbsp;&nbsp;
+        <a class="link-categories" href="blog/categoria/{{categoria.id}}">{{ categoria.nombre }}</a>
+                    &nbsp;&nbsp;
 
 
             {% endfor %}
