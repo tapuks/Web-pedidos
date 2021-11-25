@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'web_app',
     'servicios',
     'blog',
+    'contacto',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,14 @@ MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# CONFIGURACION EMAIL
+# IR AL CORREO GMAIL Y EN PERFEL-SEGURIDAD-ACCESO A APLICACIONES POCO SEGURAS(ACTIVAR), SI NO NO DEJA ENVIARLOS
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST="smtp.live.com"   # HOTMAIL
+EMAIL_HOST="smtp.gmail.com"   # GMAIL
+EMAIL_USE_TLS =True
+EMAIL_PORT=587
+# EMAIL_HOST_USER="david_berdiell@hotmail.com"
+EMAIL_HOST_USER="david.berdiell@gmail.com"
+EMAIL_HOST_PASSWORD="Vencillon123"

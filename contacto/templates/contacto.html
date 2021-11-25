@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="contenido_formulario ">
+    {% if "valido" in request.GET  %}
+
+        <P>Información enviada con exito.</P>
+
+    {% endif  %}
+    <form action="" method="POST" class="formulario">
+        {% csrf_token %}
+        <table style="color:black; margin:20px auto">
+            {{miFormulario.as_table}}
+        </table>
+            <input type="submit"></input>
+            <input type="reset"></input>
+
+    </form>
+</div>
+
+{% endblock %}

@@ -303,5 +303,16 @@ ul.errorlist{
 
 .link-categories:hover {
     text-decoration: none
+}
 
+.contenido_formulario {
+    width: 50%;
+    margin:10px auto;
+    background: orange;
+    border-radius:10px;
+    padding:5px
+}
+
+.formulario {
+    text-align: center
 }
